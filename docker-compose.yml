@@ -4,11 +4,11 @@ services:
           ports:
                 - "80:80"
           db:
-              image: postgres:15
+      image: postgres:15
                   environment:
                         POSTGRES_PASSWORD: demopass
                               POSTGRES_DB: demodb
                               volumes:
                                     - db_data:/var/lib/postgresql/data
-                        volumes:
-      db_data:
+            volumes:
+                  db_data:
